@@ -1,57 +1,259 @@
 <!DOCTYPE html>
-<html>
-  <head>
-            <title> RESUME </title>
-  <style> table, th, td {border:1px solid black;}</style>
-   </head>
- 
- <h3 style="color:blue;"> PERSONAL INFORMATION </h3>
- <p> NAME:Mudiyam Venkata Kavitha</p> 
-  
- <p> EMAIL- mudiyamkavitha@gmail.com </p> 
- <p> MOBILE- 8340049079 </p> 
-  
- <h3 style="color:green;"> EDUCATIONAL INFO </h3>
- <table> 
- <tr> 
- <th> Educational qualification </th>
- <th> marks </th> 
- <th>Institution name</th>
- </tr> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-  
- <tr> 
- <td> 10th</td>
- <td> 97% </td> 
- <td>Montessori High School </td>
- </td>
- 
-
-  
- <tr> 
- <td> Inter Mediate  </td>
- <td> 70% </td> 
- <td>Vassavi Mahila Kalashala </td>
- </td>
- 
-
-  
- </table>
- 
- <h3 style="color:blue;"> CAREER OBJECT </h3>
- <p>  To work on a challenging job profile which provides an oppurtunity to enhance my technical skills and knowledge, this could provide me and insights into new aspects so that it would be helpful form my career</p>
-  
-  <h3 style="color:green;"> TECHNICAL PROFILE <h3> 
-    <li> Language: C programming, c++, java programming </li>
-    <li>Operating systems:windows 7 </li>
-    <li> MS office and front page </li>
-    <li> Web technologies: Html, css, javascript </li>
-  
-  <h3 style="color:blue;">STRUCTURE</h3>
-  <li> Work with positive attitude and contribute towards the healthy functioning of the organisation</li>
-       <li> Self cofidence and great patience </li>
-       <li> Analyzing every angle of a project before working on it</li>
-       <li> Willingness to learn </li>
-       <li> Adaptability to change environment </li>
+    <style>
+        body {
+            background: linear-gradient(to bottom, white, #f5f5f5);
+            height: 100vh;
+        }
+        .profile-img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .btn-outline-dark {
+            margin-right: 10px;
+        }
      
-     </html>
+        .profile-img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+        }
+        .info-card {
+            border: 2px solid #ddd;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .info-card:hover {
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        }
+        .info-card i {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        .section-heading {
+            text-align: center;
+            margin-top: 40px;
+            font-weight: bold;
+        }
+        .scroll-down {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 24px;
+        }
+        .section-title {
+            text-align: center;
+            margin: 40px 0;
+            font-weight: bold;
+        }
+        .experience-card {
+            border: 2px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: white;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .experience-card:hover {
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        }
+        .skill-list {
+            list-style: none;
+            padding: 0;
+        }
+        .skill-list li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .skill-list i {
+            color: #28a745;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">M V Kavitha</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <div class="container mt-5" >
+        <div class="row align-items-center">
+            <!-- Left: Image -->
+            <div class="col-lg-6 col-12 text-center">
+                <img src="kavitha.jpeg" alt="Profile" class="profile-img" style="width: 100%;height:100%">
+            </div>
+            <!-- Right: Text -->
+            <div class="col-lg-6 col-12 text-center text-lg-start">
+                <p class="text-muted">Hello, I'm</p>
+                <h1 class="fw-bold">Venkata Kavitha Mudiyam</h1>
+                <h4 class="text-muted">Frontend Developer</h4>
+                <div class="mt-3">
+                    <button class="btn btn-outline-dark">Download CV</button>
+                    <button class="btn btn-dark">Contact Info</button>
+                </div>
+                <div class="mt-4">
+                    <a href="#" class="me-3 text-dark"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="#" class="text-dark"><i class="fab fa-github fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div class="container py-5" id="Experience">
+        <h2 class="section-title">Explore My <span class="text-primary">Experience</span></h2>
+        <div class="row align-items-center">
+            <!-- Left: Profile Image -->
+            <div class="col-lg-4 text-center text-lg-start">
+                <img src="de.webp" alt="Profile" width="300px" >
+            </div>
+            <!-- Right: Information Section -->
+            <div class="col-lg-8">
+                <div class="row g-3">
+                    <!-- Experience Card -->
+                    <div class="col-md-6">
+                        <div class="info-card">
+                            <i class="fas fa-briefcase"></i>
+                            <h5>Experience</h5>
+                            <p>Fresher</p>
+                            <p>Frontend Development</p>
+                        </div>
+                    </div>
+                    <!-- Education Card -->
+                    <div class="col-md-6">
+                        <div class="info-card">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h5>Education</h5>
+                            <p>B.Sc. Bachelor's Degree</p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Description -->
+                <p class="mt-4 text-muted">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore omnis sapiente hic odio quod voluptates 
+                    alias nobis excepturi perspiciatis natus voluptatem exercitationem.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    
+ <!-- Experience Section -->
+ <div class="container">
+    <h2 class="section-title"> My<span class="text-primary"> Skills</span></h2>
+
+    <div class="row justify-content-center">
+        <!-- Frontend Development Card -->
+        <div class="col-md-5 mx-2 mb-4">
+            <div class="experience-card">
+                <h4>Frontend Development</h4>
+                <ul class="skill-list">
+                    <li><i class="fas fa-check-square"></i> <span>HTML - <strong>Basic</strong></span></li>
+                    <li><i class="fas fa-check-square"></i> <span>CSS - <strong>Basic</strong></span></li>
+                    <li><i class="fas fa-check-square"></i> <span>JavaScript - <strong>Basic</strong></span></li>
+           
+                </ul>
+            </div>
+        </div>
+
+       <!-- Backend Development Card -->
+<div class="col-md-5 mx-2 mb-4">
+    <div class="experience-card">
+        <h4>Backend Development</h4>
+        <ul class="skill-list">
+            <li>
+                <i class="fa-solid fa-database"></i>
+                                <span>Java - <strong>Basic</strong></span>
+            </li>
+          
+          
+           
+        </ul>
+    </div>
+</div>
+
+    </div>
+</div>
+<div class="container">
+    <h2 class="section-title">My <span class="text-primary">Projects</span></h2>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="d2.jpg" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="d2.jpg" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="d2.jpg" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- fotter -->
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
+      </div>
+  
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+      </ul>
+    </footer>
+  </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
